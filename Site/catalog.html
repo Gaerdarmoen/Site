@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Магазин компьютерной техники и игр Silversun</title>
 </head>
 <body>
 
+    <a href="about.html">О нас</a>
+    <a href="index.html">Главная</a>
+    <a href="contacts.html">Контакты</a>
+
+    <h1>Оформить заказ:</h1>
+    <form action="catalog.html" method="post">
+        <fieldset>
+            <legend>Ваши контактные данные:</legend>
+            <div>
+                <label for="fio">Ваше имя:</label>
+                <input id="fio" type="text" placeholder="Петров Петр Петрович" name="zakaz[fio]" required>
+            </div>
+
+            <div>
+                <label for="address">Ваш адрес:</label>
+                <input id="address" type="text" placeholder="197571, Санкт-Петербург, Комендантский пр. д1" name="zakaz[address]" required>
+            </div>
+
+            <div>
+                <label for="email-p">Ваша электронная почта:</label>
+                <input id="email-p" type="email" placeholder="petro@mail.ru" name="zakaz[email]" required>
+            </div>
+
+            <div>
+                <label for="phone">Ваш телефон:</label>
+                <input id="phone" type="tel" placeholder="65-98-23" name="zakaz[tel]" required>
+            </div>
+
+            <div>
+                <label for="metro">Ближайшая станция метро:</label>
+                <select id="metro" name="zakaz[metro]">
+                    <optgroup label="Синяя ветка">
+                        <option value="1">Пионерская</option>
+                        <option value="2">Черная Речка</option>
+                        <option value="3">Петроградская</option>
+                    </optgroup>
+                    <optgroup label="Фиолетовая ветка">
+                        <option value="4">Комендантский проспект</option>
+                        <option value="5">Старая деревня</option>
+                        <option value="6">Спортивнач</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+</form>
 </body>
 </html>
