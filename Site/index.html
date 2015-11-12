@@ -2,15 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/window.css">
     <title>Магазин компьютерной техники и игр Silversun</title>
 </head>
 <body>
 
-    <a href="about.html">О нас</a>
-    <a href="catalog.html">Каталог</a>
-    <a href="contacts.html">Контакты</a>
-
+    <ul class="nav">
+        <li><a href="index.html">Главная</a>
+            <ul>
+                <li><a href="О нас">About</a></li>
+                <li><a href="Отзывы">Feedbacks</a></li>
+            </ul>
+        </li>
+        <li><a href="catalog.html">Каталог</a>
+            <ul>
+                <li><a href="Игры">Games</a></li>
+                <li><a href="Контроллеры">Контроллеры</a></li>
+                <li><a href="Карты оплаты">Карты оплаты</a></li>
+            </ul>
+        </li>
+        <li><a href="contacts.html">Контакты</a>
+            <ul>
+                <li><a href="Телефон">Telephone</a></li>
+                <li><a href="Почта">Email</a></li>
+            </ul>
+        </li>
+    </ul>
     <h1>Добро пожаловать магазин компьютерной техники и игр Silversun!</h1>
+
+    <a href="#openModal">Openwindow</a>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Modal window</h2>
+            <p>Silversun Shop</p>
+        </div>
+    </div>
 
     <img src=img/lite.jpg>
 
